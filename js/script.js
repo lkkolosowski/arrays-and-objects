@@ -80,18 +80,18 @@
     console.log(`CZEŚĆ! Zaczynamy lekcję o tablicach 😊`);
   };
 
-  const copyToConsole = () => {
-    const codes = document.querySelectorAll(".js-code");
-    codes.forEach((code) => {
-      code.addEventListener("click", () => {
-        window.prompt("Skopiuj do schowka i wklej do konsoli: CTRL+C, Enter", code.innerText);
-      });
-    });
+  const copyToConsole = (code) => {
+    window.prompt("Skopiuj do schowka i wklej do konsoli: CTRL+C, Enter", code.innerText);
   };
 
   const init = () => {
+    const codes = document.querySelectorAll(".js-code");
+    codes.forEach((code) => {
+      code.addEventListener("click", () => {
+        copyToConsole(code);
+      });
+    });
     sayHello();
-    copyToConsole();
   };
 
   init();
