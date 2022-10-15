@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Tablice i Obiekty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/container.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/code.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body class="body">
+    <main class="container">
+      <section class="section">
+        <h1 class="section__header">Ćwiczenia do tablic i obiektów</h1>
+        <ol class="section__list">
+          <li class="section__list-item" id="li__1">
+            <p class="code">
+              Funkcja <span class="code__line">mergeArrays(array1, array2)</span> , która zwróci nową tablicę, będącą połączeniem dwóch przekazanych tablic.
+              Np.:
+            </p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">mergeArrays([2, 5], [3, 7])</span> powinno zwrócić
+              <span class="code__line">[2, 5, 3, 7]</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__2">
+            <p class="code">
+              Funkcja <span class="code__line">exceptFirst()</span> , która zwróci tablicę ze wszystkimi przekazanymi do niej argumentami oprócz pierwszego.
+              Np.:
+            </p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">exceptFirst(2, "delfin", null)</span> powinno zwrócić
+              <span class="code__line">["delfin", null]</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__3">
+            <p class="code">
+              Funkcja <span class="code__line">last2Parameters()</span> , która zwróci tablicę z dwoma ostatnimi argumentami przekazanymi do funkcji. Np.:
+            </p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">last2Parameters(1, 3, undefined, true)</span> powinno zwrócić
+              <span class="code__line">[undefined, true]</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__4">
+            <p class="code">Funkcja <span class="code__line">indexOf(element, array)</span> , która zwróci indeks podanego elementu w podanej tablicy. Np.:</p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">indexOf("kawa", ["rum", "kawa", "sangría"])</span> powinno zwrócić
+              <span class="code__line">1</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__5">
+            <p class="code">Funkcja <span class="code__line">findNonEmptyTask(tasks)</span> , która zwróci pierwsze zadanie, które ma treść. Np.:</p>
+            <p class="code">
+              <span class="code__block code__block--interact js-code">
+                findNonEmptyTask([ <br />{<span class="code__line--property">content: ""</span>}, <br />{<span class="code__line--property"
+                  >content: "kupić balony w kształcie psów"</span
+                >}, <br />])
+              </span>
+            </p>
+            <p class="code">powinno zwrócić <span class="code__line">{content: "kupić balony w kształcie psów"}</span> .</p>
+          </li>
+          <li class="section__list-item" id="li__6">
+            <p class="code">
+              Funkcja <span class="code__line">oddIndex(numbers)</span> , która zwróci indeks pierwszej nieparzystej liczby z podanej tablicy. Np.:
+            </p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">oddIndex([2, 4, 7, 8])</span> powinno zwrócić <span class="code__line">2</span> .
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="section">
+        <ol start="7" class="section__list">
+          <li class="section__list-item" id="li__7">
+            <p class="code">Funkcja <span class="code__line">hasStrawberry(fruits)</span> , która sprawdzi, czy w podanych owocach jest truskawka. Np.:</p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">hasStrawberry(["banan", "marakuja"])</span> powinno zwrócić
+              <span class="code__line">false</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__8">
+            <p class="code">Funkcja <span class="code__line">someAdult(people)</span> , która sprawdzi, czy wśród podanych osób jest ktoś dorosły. Np.:</p>
+            <p class="code">
+              <span class="code__block code__block--interact js-code"
+                >someAdult([ <br />{<span class="code__line--property">name: "Melodia"</span>, <span class="code__line--property">age:</span> 15}, <br />{<span
+                  class="code__line--property"
+                  >name: "Kosmo"</span
+                >, <span class="code__line--property">age:</span> 19}, <br />])
+              </span>
+            </p>
+            <p class="code">powinno zwrócić <span class="code__line">true</span> .</p>
+          </li>
+          <li class="section__list-item" id="li__9">
+            <p class="code">Funkcja <span class="code__line">onlyString()</span> , która sprawdzi, czy wszystkie podane argumenty są tekstowe. Np.:</p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">onlyString("", "żelazko")</span> powinno zwrócić <span class="code__line">true</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__10">
+            <p class="code">
+              Funkcja <span class="code__line">filterPremium(carBrands)</span> , która z podanej tablicy marek samochodów zwróci tylko marki premium. Np.:
+            </p>
+            <p class="code">
+              <span class="code__line code__line--interact js-code">filterPremium(["Peugeot", "BMW", "Audi"])</span> powinno zwrócić
+              <span class="code__line">["BMW", "Audi"]</span> .
+            </p>
+          </li>
+          <li class="section__list-item" id="li__11">
+            <p class="code">Funkcja <span class="code__line">getColors()</span> , która zwróci tablicę kolorów samochodów podanych w argumentach. Np.:</p>
+            <p class="code">
+              <span class="code__block code__block--interact js-code">
+                getColors( <br />{<span class="code__line--property">car: "BMW X5"</span>, <span class="code__line--property">color: "black"</span>},
+                <br />{<span class="code__line--property">car: "Peugeot 3008"</span>, <span class="code__line--property">color: "white"</span>}, <br />)
+              </span>
+            </p>
+            <p class="code">powinno zwrócić <span class="code__line">["black", "white"]</span> .</p>
+          </li>
+          <li class="section__list-item" id="li__12">
+            <p class="code">
+              Funkcja <span class="code__line">sortPeople(people)</span>
+              która posortuje osoby od najmłodszych do najstarszych. Np.:
+            </p>
+            <p class="code">
+              <span class="code__block code__block--interact js-code"
+                >sortPeople([<br />{<span class="code__line--property">name: "Krzychu"</span>, <span class="code__line--property">age:</span> 30},<br />{<span
+                  class="code__line--property"
+                  >name: "Zdzichu"</span
+                >, <span class="code__line--property">age:</span> 20},<br />{<span class="code__line--property">name: "Michu"</span>,
+                <span class="code__line--property">age:</span> 50},<br />])
+              </span>
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

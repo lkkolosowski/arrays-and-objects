@@ -1,0 +1,28 @@
+.code .code__line,
+.code .code__block {
+  font-family: "Roboto Mono", monospace;
+  background-color: #f0f0f0;
+}
+
+.code .code__line {
+  padding: 0 3px;
+}
+.code .code__block {
+  display: block;
+  padding: 10px;
+}
+
+.code .code__line--interact,
+.code .code__block--interact {
+  background-color: beige;
+  cursor: pointer;
+}
+
+.code .code__line--interact:hover,
+.code .code__block--interact:hover {
+  opacity: 0.7;
+}
+
+.code .code__line--property {
+  color: #df5000;
+}
