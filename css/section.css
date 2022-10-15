@@ -18,3 +18,7 @@
 .section__list-item {
   padding-bottom: 20px;
 }
+
+.section__paragraph--center {
+  text-align: center;
+}
