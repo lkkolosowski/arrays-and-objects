@@ -14,8 +14,7 @@
   // zadanie 3
 
   last2Parameters = (...arguments) => {
-    const last2Parameters = arguments.slice(-2);
-    return last2Parameters;
+    return arguments.slice(-2);
   };
 
   // zadanie 4
@@ -58,7 +57,7 @@
   // zadanie 10
 
   filterPremium = (carBrands) => {
-    const isPremium = (brand) => brand.includes("BMW") || brand.includes("Audi") || brand.includes("Mercedes");
+    const isPremium = (brand) => ["BMW", "Audi", "Mercedes"].includes(brand);
     return carBrands.filter(isPremium);
   };
 
