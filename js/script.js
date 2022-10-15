@@ -7,7 +7,6 @@
   // zadanie 2
 
   exceptFirst = (...arguments) => {
-    // const arrayFromArgs = Array.from(arguments);
     const [, ...rest] = arguments;
     return [...rest];
   };
@@ -15,7 +14,6 @@
   // zadanie 3
 
   last2Parameters = (...arguments) => {
-    // const arrayFromArgs = Array.from(arguments);
     const last2Parameters = arguments.slice(-2);
     return last2Parameters;
   };
@@ -53,7 +51,6 @@
   // zadanie 9
 
   onlyString = (...arguments) => {
-    // const arrayFromArgs = Array.from(arguments);
     const isString = (argument) => typeof argument === "string";
     return arguments.every(isString);
   };
