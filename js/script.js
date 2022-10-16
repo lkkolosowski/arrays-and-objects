@@ -24,6 +24,7 @@
   };
 
   // zadanie 5
+
   findNonEmptyTask = (tasks) => {
     return tasks.find(({ content }) => content !== "");
   };
